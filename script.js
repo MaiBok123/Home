@@ -25,8 +25,6 @@ function unlockWeek(week) {
     if (!unlockedWeeks.includes(week)) {
         unlockedWeeks.push(week);
         alert('คุณได้ปลดล็อกเนื้อหาสำหรับสัปดาห์ที่ ' + week);
-    } else {
-        alert('เนื้อหาสำหรับสัปดาห์ที่ ' + week + ' ได้ถูกปลดล็อกแล้ว');
     }
 }
 
@@ -34,8 +32,5 @@ function lockWeek(week) {
     var index = unlockedWeeks.indexOf(week);
     if (index !== -1) {
         unlockedWeeks.splice(index, 1);
-        alert('คุณได้ล็อกเนื้อหาสำหรับสัปดาห์ที่ ' + week);
-    } else {
-        alert('เนื้อหาสำหรับสัปดาห์ที่ ' + week + ' ถูกล็อกอยู่แล้ว');
     }
 }
